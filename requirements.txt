@@ -1,3 +1,2 @@
 deephaven_server==0.17.0
-debugpy
 pydevd-pycharm~=222.4345.23
