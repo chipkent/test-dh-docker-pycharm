@@ -1,2 +1,3 @@
-deephaven_server==0.17.0
-pydevd-pycharm~=222.4345.23
+deephaven_server==0.18.0
+#pydevd-pycharm~=222.4345.23
+pydevd

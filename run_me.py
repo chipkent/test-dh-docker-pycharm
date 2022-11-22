@@ -1,8 +1,9 @@
 
 print("STARTING")
 
-import pydevd_pycharm
-pydevd_pycharm.settrace(host="host.docker.internal",
+# import pydevd_pycharm as pydevd
+import pydevd
+pydevd.settrace(host="host.docker.internal",
                         port=10001,
                         suspend=True,
                         trace_only_current_thread=False,
@@ -14,6 +15,8 @@ print(f"Python version: {sys.version}")
 print(f"Version info: {sys.version_info}")
 
 from deephaven_server import Server
+import deephaven_server
+print(f"deephaven_server version: ", deephaven_server.__version__)
 server = Server(port=10000, jvm_args=['-Xmx4g'])
 server.start()
 
